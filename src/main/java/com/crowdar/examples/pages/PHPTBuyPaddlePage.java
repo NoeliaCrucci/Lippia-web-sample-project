@@ -91,7 +91,7 @@ public class PHPTBuyPaddlePage extends PageBasePHPT {
 
 	public void validatePaymentRejectionMessage() {
 		WebElement ErrorMessage = getWebElement(By.cssSelector(VALIDATION_MESSAGE_CSSS));
-		Assert.assertEquals("This payment was declined by your bank. Please try again, or use a different payment method. Contact your bank for further information.", ErrorMessage.getText());
+		Assert.assertEquals("Este pago ha sido rechazado por su banco. Por favor, inténtelo de nuevo o utilice un método de pago distinto. Contacte con su banco para obtener más información.", ErrorMessage.getText());
 		
 	}
 	
